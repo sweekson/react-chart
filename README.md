@@ -1,2 +1,9 @@
-# trend-fed-chart
-Trend Micro front-end workshop
+# Trend Micro FED workshop - chart template
+
+## Init project
+
+1. `npm install`
+2. `npm start`
+
+OK! You are good to go
+
