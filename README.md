@@ -1,5 +1,7 @@
 # Trend Micro FED workshop - chart template
 
+![image](https://cloud.githubusercontent.com/assets/447801/16579800/04713844-42d4-11e6-8efa-6949dece8208.png)
+
 ## Init project
 
 1. `npm install`
