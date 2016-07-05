@@ -16,9 +16,9 @@ class Workspace extends Component {
             }
         };
         const layout = [
-            { i: 'pie-chart', x: 0, y: 0, w: 4, h: 2, static: true },
-            { i: 'line-chart', x: 4, y: 0, w: 2, h: 2, minW: 2, maxW: 8 },
-            { i: 'bar-chart', x: 6, y: 0, w: 2, h: 2, minW: 2, maxW: 8 }
+            { i: 'pie-chart', x: 0, y: 0, w: 4, h: 2, minW: 2, maxW: 8 },
+            { i: 'line-chart', x: 4, y: 0, w: 6, h: 6, minW: 2, maxW: 8 },
+            { i: 'bar-chart', x: 0, y: 2, w: 4, h: 4, minW: 2, maxW: 8 }
         ];
 
         return (
