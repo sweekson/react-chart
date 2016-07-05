@@ -45,6 +45,6 @@ module.exports = {
     },
     resolve: {
         alias: {},
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx', '.styl']
     }
 };
