@@ -29,51 +29,48 @@ class Workspace extends Component {
                 rowHeight={30}
                 width={1200}
             >
-                <div key={'pie-chart'}>
-                    <Widget>
-                        <Widget.Header>
-                            <Widget.Title>Pie Chart</Widget.Title>
-                            <Widget.Controls>
-                                <Widget.Button
-                                    type="delete"
-                                />
-                            </Widget.Controls>
-                        </Widget.Header>
-                        <Widget.Content style={styles.widgetContent}>
-                            Pie Chart
-                        </Widget.Content>
-                    </Widget>
-                </div>
-                <div key={'line-chart'}>
-                    <Widget>
-                        <Widget.Header>
-                            <Widget.Title>Line Chart</Widget.Title>
-                            <Widget.Controls>
-                                <Widget.Button
-                                    type="delete"
-                                />
-                            </Widget.Controls>
-                        </Widget.Header>
-                        <Widget.Content style={styles.widgetContent}>
-                            Line Chart
-                        </Widget.Content>
-                    </Widget>
-                </div>
-                <div key={'bar-chart'}>
-                    <Widget>
-                        <Widget.Header>
-                            <Widget.Title>Bar Chart</Widget.Title>
-                            <Widget.Controls>
-                                <Widget.Button
-                                    type="delete"
-                                />
-                            </Widget.Controls>
-                        </Widget.Header>
-                        <Widget.Content style={styles.widgetContent}>
-                            Bar Chart
-                        </Widget.Content>
-                    </Widget>
-                </div>
+                <Widget key="pie-chart">
+                    <Widget.Header>
+                        <Widget.Title>Pie Chart</Widget.Title>
+                        <Widget.Controls>
+                            <Widget.Button type="edit" />
+                            <Widget.Button type="toggle" />
+                            <Widget.Button type="fullscreen" />
+                            <Widget.Button type="delete" />
+                        </Widget.Controls>
+                    </Widget.Header>
+                    <Widget.Content style={styles.widgetContent}>
+                        Pie Chart
+                    </Widget.Content>
+                </Widget>
+                <Widget key="line-chart">
+                    <Widget.Header>
+                        <Widget.Title>Line Chart</Widget.Title>
+                        <Widget.Controls>
+                            <Widget.Button type="edit" />
+                            <Widget.Button type="toggle" />
+                            <Widget.Button type="fullscreen" />
+                            <Widget.Button type="delete" />
+                        </Widget.Controls>
+                    </Widget.Header>
+                    <Widget.Content style={styles.widgetContent}>
+                        Line Chart
+                    </Widget.Content>
+                </Widget>
+                <Widget key="bar-chart">
+                    <Widget.Header>
+                        <Widget.Title>Bar Chart</Widget.Title>
+                        <Widget.Controls>
+                            <Widget.Button type="edit" />
+                            <Widget.Button type="toggle" />
+                            <Widget.Button type="fullscreen" />
+                            <Widget.Button type="delete" />
+                        </Widget.Controls>
+                    </Widget.Header>
+                    <Widget.Content style={styles.widgetContent}>
+                        Bar Chart
+                    </Widget.Content>
+                </Widget>
             </GridLayout>
         );
     }
