@@ -4,16 +4,21 @@
   "description": "chart template with react.js",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors",
+    "start": "webpack-dev-server --progress --colors --host 0.0.0.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tim Lin",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "d3": "^3.5.17",
     "font-awesome": "^4.6.3",
+    "highcharts": "^4.2.5",
     "jquery": "^3.0.0",
+    "paper": "^0.10.2",
+    "rd3": "^0.7.0",
     "react": "^15.2.0",
+    "react-d3": "^0.4.0",
     "react-dom": "^15.2.0",
     "react-grid-layout": "^0.12.7"
   },

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import GridLayout from 'react-grid-layout';
+
 import Widget from '../Widget';
+
+import Paperchart from '../Paperchart';
+import PaperchartOptions from '../Paperchart/samples';
+
 import './index.styl';
 
 class Workspace extends Component {
@@ -16,9 +21,7 @@ class Workspace extends Component {
             }
         };
         const layout = [
-            { i: 'pie-chart', x: 0, y: 0, w: 4, h: 4, minW: 2, maxW: 8 },
-            { i: 'line-chart', x: 4, y: 0, w: 6, h: 10, minW: 2, maxW: 8 },
-            { i: 'bar-chart', x: 0, y: 2, w: 4, h: 6, minW: 2, maxW: 8 }
+            { i: 'paper-bar-chart', x: 0, y: 1, w: 6, h: 12, minW: 2, maxW: 8 }
         ];
 
         return (
@@ -29,9 +32,9 @@ class Workspace extends Component {
                 rowHeight={30}
                 width={1200}
             >
-                <Widget key="pie-chart">
+                <Widget key="paper-bar-chart">
                     <Widget.Header>
-                        <Widget.Title>Pie Chart</Widget.Title>
+                        <Widget.Title>Paper - Line Chart</Widget.Title>
                         <Widget.Controls>
                             <Widget.Button type="edit" />
                             <Widget.Button type="toggle" />
@@ -39,36 +42,9 @@ class Workspace extends Component {
                             <Widget.Button type="delete" />
                         </Widget.Controls>
                     </Widget.Header>
+
                     <Widget.Content style={styles.widgetContent}>
-                        Pie Chart
-                    </Widget.Content>
-                </Widget>
-                <Widget key="line-chart">
-                    <Widget.Header>
-                        <Widget.Title>Line Chart</Widget.Title>
-                        <Widget.Controls>
-                            <Widget.Button type="edit" />
-                            <Widget.Button type="toggle" />
-                            <Widget.Button type="fullscreen" />
-                            <Widget.Button type="delete" />
-                        </Widget.Controls>
-                    </Widget.Header>
-                    <Widget.Content style={styles.widgetContent}>
-                        Line Chart
-                    </Widget.Content>
-                </Widget>
-                <Widget key="bar-chart">
-                    <Widget.Header>
-                        <Widget.Title>Bar Chart</Widget.Title>
-                        <Widget.Controls>
-                            <Widget.Button type="edit" />
-                            <Widget.Button type="toggle" />
-                            <Widget.Button type="fullscreen" />
-                            <Widget.Button type="delete" />
-                        </Widget.Controls>
-                    </Widget.Header>
-                    <Widget.Content style={styles.widgetContent}>
-                        Bar Chart
+                        <Paperchart.BarChart data={PaperchartOptions.bar} />
                     </Widget.Content>
                 </Widget>
             </GridLayout>

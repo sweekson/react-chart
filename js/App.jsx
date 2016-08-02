@@ -7,7 +7,7 @@ class App extends React.Component {
     	<div className="container-fluid">
 		    <div className="row-fluid">
 		      <div className="span12">
-                <Workspace />
+            <Workspace />
 		      </div>      
 		    </div>
 		  </div>
